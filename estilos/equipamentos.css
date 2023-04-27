@@ -1,0 +1,49 @@
+.section-equipamentos{
+  background-color: #f7f9fa;
+}
+
+.equipamentos{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr;
+}
+
+.equipamentos-titulo{
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #033393, #4993f0, #fff);
+  color: rgb(13, 13, 134);
+}
+
+
+.equipamentos-galeria{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+.equipamentos-galeria img{
+    border-radius: 10px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #1a1818;
+}
+
+@media (max-width:1100px){
+  .equipamentos-galeria{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+
+  }
+}
+
+@media (max-width:800px){
+  .equipamentos-galeria{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
